@@ -12,11 +12,11 @@ USE Bamazon;
 -- );
 CREATE TABLE products (
 	item_id INT NOT NULL AUTO_INCREMENT,
-    product_name VARCHAR(45) NOT NULL,
-    department_name VARCHAR(45) NOT NULL,
-    price float(255,2) UNSIGNED NOT NULL,
-    stock_quantity INT(255) UNSIGNED NOT NULL,
-    PRIMARY KEY(item_id)
+  product_name VARCHAR(45) NOT NULL,
+  department_name VARCHAR(45) NOT NULL,
+  price FLOAT(255,2) UNSIGNED NOT NULL,
+  stock_quantity INT(255) UNSIGNED NOT NULL,
+  PRIMARY KEY(item_id)
 );
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
