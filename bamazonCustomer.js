@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '',
+  password: 'Tom$8Loans90',
   database: 'Bamazon'
 });
 
@@ -40,11 +40,8 @@ var start = function() {
     }, {
       name: "quantity",
       type: "input",
-
-      message: "How many units would you like to buy?",
-      //   validate: function(input) {
-      //   	console.log(parseInt(input));
-      // }
+      message: "How many units would you like to buy?"
+      
     }]).then(function(answer) {
       var chosenItem;
       for (var i = 0; i < res.length; i++) {
@@ -56,7 +53,6 @@ var start = function() {
       	var newQuantity = chosenItem.stock_quantity - answer.quantity;
      		console.log(answer.quantity, "items added to your cart.");
      		console.log("Your total for ("+answer.quantity+") "+answer.selectItem+" is $"+answer.quantity * chosenItem.price);
-     		console.log("AAAAAA: "+chosenItem.stock_quantity);
      		connection.query("UPDATE products SET ? WHERE ?", [{
      			stock_quantity: newQuantity
      		}, {
