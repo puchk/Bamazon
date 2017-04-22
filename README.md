@@ -23,6 +23,25 @@
  - However, if your store does have enough of the product, you should fulfill the customer's order.
      + This means updating the SQL database to reflect the remaining quantity.
      + Once the update goes through, show the customer the total cost of their purchase.
+     
+### Using this App
+Set up MySQL  
+![mysql](https://cloud.githubusercontent.com/assets/22807914/25300114/f2ea7a7c-26bc-11e7-90a0-e6a83d4a2593.PNG)  
+Access the JS file through Node  
+![accessfile](https://cloud.githubusercontent.com/assets/22807914/25300169/161a64c0-26be-11e7-9d6f-421fde0c81b9.PNG)  
+Which will display a table of the id, product name, and price and will prompt the user to select an item to purchase  
+![start](https://cloud.githubusercontent.com/assets/22807914/25300192/817919be-26be-11e7-9026-2281240ee211.PNG)  
+After user chooses an item, they are prompted for the quantity  
+![nextquestion](https://cloud.githubusercontent.com/assets/22807914/25300211/cc0a00c4-26be-11e7-8732-0497a63e6e1f.PNG)  
+If there is enough product in stock, you purchase the items and are redirected to the home screen after a few seconds  
+![addtocart](https://cloud.githubusercontent.com/assets/22807914/25300237/653963de-26bf-11e7-9014-a61b96f58084.PNG)  
+If there is quantity requested exceeds the amount in stock, the items will not be purchased  
+![notenough](https://cloud.githubusercontent.com/assets/22807914/25300255/b6cc455e-26bf-11e7-8c43-d1caf8580ebe.PNG)
+
+
+
+
+
       
 ### Technologies Used
  - JS
